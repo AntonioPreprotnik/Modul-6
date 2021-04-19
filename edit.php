@@ -9,8 +9,10 @@
     $init_db = new Database();
 
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+
         if(empty($_POST['tekst'])) {
-            Header('Loction: edit.php?id='.$_GET['id']);
+            Header('Location: edit.php?id='.$_GET['id']);
+            exit();
         }
 
         $init_db->update($_POST);

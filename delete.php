@@ -1,7 +1,7 @@
 <?php
 
     if(!isset($_GET['id']) || empty($_GET['id'])) {
-        Header('Location: index.php');
+        header('Location: index.php');
         exit();
     }
 
@@ -10,7 +10,8 @@
 
     if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         if(empty($_POST['id'])) {
-            Header('Loction: delete.php?id='.$_GET['id']);
+            header('Location: index.php');
+            exit();
         }
 
         $init_db->delete($_POST['id']);

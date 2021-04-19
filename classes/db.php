@@ -1,13 +1,19 @@
 <?php
 
+//Za uključivanje prikaza grešaka na web stranici
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
+include 'config.php';
 
 class Database {
 
     private $connection;
-    private $dbhost = 'remotemysql.com';
-    private $database = 'Q18XIetNIx';
-    private $user = 'Q18XIetNIx';
-    private $pass = 'vhQS9fKKsi';
+    private $dbhost = DB_HOST;
+    private $database = DB_NAME;
+    private $user = DB_USER;
+    private $pass = DB_PASS;
 
     public function __construct() {
 
