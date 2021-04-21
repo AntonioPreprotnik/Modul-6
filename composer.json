@@ -1,0 +1,11 @@
+{
+    "name": "ln-github/test-001",
+    "description": "Testiranje Github Actions CI sustava",
+    "license": "MIT",
+    "require": {
+        "php" : ">=7.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit" : "^9"
+    }
+}
