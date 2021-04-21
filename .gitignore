@@ -1,2 +1,7 @@
+<<<<<<< HEAD
 /vendor
 .env
+=======
+config.php
+/vendor
+>>>>>>> 9f4151d114d23be0e8ad59df587b2bef2dde23b5
